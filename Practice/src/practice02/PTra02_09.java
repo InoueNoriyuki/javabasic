@@ -12,7 +12,7 @@ public class PTra02_09 {
 		int height = 23;	// 高さ
 
 		// ★ 変数quadrangleに、四角形の面積を代入してください
-
+		
 
 		// ★ 変数quadrangleを出力してください
 

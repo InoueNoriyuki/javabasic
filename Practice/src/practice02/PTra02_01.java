@@ -7,16 +7,20 @@ package practice02;
  */
 
 public class PTra02_01 {
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 
 		// ★ 20を5で割った値を出力してください
 
+		System.out.println(20/5);
 
 		// ★ 126に13を掛けた値を出力してください
-
+		System.out.println(126*13);
 
 		// ★ 97を6で割ったときの余りを出力してください
-
+		System.out.println(97%6);
 
 	}
 }
