@@ -22,5 +22,7 @@ public class PTra02_10 {
 		 * ※ プログラムは何行書いても良いです
 		 */
 
+		coffee = coffee * 
+
 	}
 }
