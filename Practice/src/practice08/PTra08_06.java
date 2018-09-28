@@ -10,9 +10,14 @@ public class PTra08_06 {
 	public static void main(String[] args) {
 
 		dispValue("こんにちは");
+
+
 		dispValue(2000);
+
 		dispValue(319.569);
+
 		dispValue('島');
+
 
 	}
 
@@ -30,11 +35,16 @@ public class PTra08_06 {
 	}
 
 	// ★ dispValueを引数intでオーバーロードしてください。処理は同じ
-
+	public static void dispValue(int message  ) {
+		System.out.println("「" + message + "」");
+	}
 
 	// ★ dispValueを引数doubleでオーバーロードしてください。処理は同じ
-
-
+	public static void dispValue(double message) {
+		System.out.println("「" + message + "」");
+	}
 	// ★ dispValueを引数charでオーバーロードしてください。処理は同じ
-
+	public static void dispValue(char message) {
+		System.out.println("「" + message + "」");
+	}
 }

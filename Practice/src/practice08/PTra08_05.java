@@ -37,9 +37,9 @@ public class PTra08_05 {
 
 		// ★ 変数choiceの中が、1であれば四角形の面積を算出するメソッドを、2であれば三角形の面積を算出するメソッドを呼び出してください
 		if(choice==1) {
-			System.out.println("四角形"+i);
+			System.out.println(i);
 		}else {
-			System.out.println("三角形"+k);
+			System.out.println(k);
 		}
 	}
 
