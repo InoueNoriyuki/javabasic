@@ -5,6 +5,5 @@ public class User {
 		String userNm;
 		String mail;
 		String password;
-		
 
 }
