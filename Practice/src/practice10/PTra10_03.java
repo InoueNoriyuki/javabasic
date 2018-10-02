@@ -27,10 +27,10 @@ public class PTra10_03 {
 
 
 		// ★ java.util.Scannerクラスをインスタンス化し、変数scannerに代入してください
-
+		Scanner scanner = new Scanner(System.in);
 
 		// ★ 入力された値を、String型の変数lineに格納してください
-		Scanner scanner = new Scanner(System.in);
+		
 		String line = scanner.nextLine();
 
 		// ★ 変数lineに格納されている値を','で区切り、配列にしてください（Stringクラスのメソッドを使用します）
