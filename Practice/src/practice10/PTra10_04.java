@@ -6,6 +6,8 @@ package practice10;
  * Copyright(c) Rhizome Inc. All Rights Reserved.
  */
 
+import java.util.Scanner;
+
 public class PTra10_04 {
 
 	/*
@@ -15,22 +17,54 @@ public class PTra10_04 {
 	public static void main(String[] args) {
 
 		// ★ User型の変数が3つ入る配列usersを宣言・確保してください
-			User users;
-			
+
+
+			User[]users =new User[3];
+
+			User users1 =new User();
+
+			User users2 =new User();
+
+
+			User users3 =new User();
+
+			users[0]=users1;
+
+			users[1]=users2;
+
+			users[2]=users3;
+
+
+
 
 		// ★ java.util.Scannerクラスをインスタンス化し、変数scannerに代入してください
-
+			Scanner scanner = new Scanner(System.in);
 
 		// ★ usersのサイズ分繰り返す制御構文を記述してください
 		//----------- ループ start
 
-			System.out.println("##人目の情報を入力します");		/* ##には、カウントを入れてください */
+
+			for(int i =0;i<users.length;i++) {
+				i +=1;
+
+			System.out.println(i+"人目の情報を入力します");		/* ##には、カウントを入れてください */
 			System.out.println("ユーザID（数字）、 ユーザ名、メールアドレス、パスワードをカンマ区切りで入力してください");
 
 			// ★ コマンドプロンプトに入力された値を、String型の変数lineに格納してください
 
+			String line = scanner.nextLine();
 
 			// ★ 変数lineに格納されている値を','で区切り、配列にしてください（Stringクラスのメソッドを使用します）
+
+
+			String[]list = line.split(",");
+
+
+
+			users[i].userId =Integer.parseInt(list[0]);
+			users[i].userNm = list[1];
+			users[i].mail = list[2];
+			users[i].password = list[3];
 
 
 			// ★ 配列にした値を、users[カウント]の各フィールドに代入してください
@@ -40,6 +74,12 @@ public class PTra10_04 {
 		//----------- ループ end
 
 		// ★ usersに格納されている全てのインスタンスの、フィールドuserId, userNm, mail, passwordを出力してください
+
+			System.out.println(users[i].userId);
+			System.out.println(users[i].userNm);
+			System.out.println(users[i].mail);
+			System.out.println(users[i].password);
+		}
 
 	}
 }

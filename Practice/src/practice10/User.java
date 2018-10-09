@@ -6,4 +6,5 @@ public class User {
 		String mail;
 		String password;
 
+
 }
