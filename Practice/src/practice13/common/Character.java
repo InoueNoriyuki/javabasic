@@ -87,7 +87,7 @@ public class Character {
 
 	/**
 	 * キャラクター情報を表示します
-	 * @return
+	 * ds@return
 	 */
 	public String showParameter() {
 		StringBuilder str = new StringBuilder();

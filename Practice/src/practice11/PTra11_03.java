@@ -42,7 +42,7 @@ public class PTra11_03 {
 
 		System.out.println("クラスフィールドnumber："+ this.number/* + ★ クラスフィールドnumberの出力をしてください */);
 
-
+	}
 
 	}
 
