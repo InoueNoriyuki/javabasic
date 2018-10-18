@@ -30,17 +30,35 @@ public class PTra13_04  {
 		 * 	●Heroの攻撃 -> ダメージ判定 -> Slimeの攻撃 -> ダメージ判定
 		 * 上記を繰り返し行います
 		 */
-		for(int i=0;i<hero.damage();i--) {
-			hero.damage(i);
-			slime.damage(i);
+		while(true) {
+			int Hatk =hero.attack();
+			boolean Damage =slime.damage(Hatk);
+			if(Damage) {
+				System.out.println(hero.getName()+"は"+slime.getName()+"との戦いに勝利した");
+				break;
+			}
+
+			int Satk =slime.attack();
+			boolean Hdmg =hero.damage(Satk);
+			if(Hdmg) {
+				System.out.println(slime.getName()+"は"+hero.getName()+"との戦いに勝利した");
+				break;
+			}
+
 		}
+//		for(int i=0;i<super(hp);i--) {
+//
+//			damage(i);
+//
+//			break;
+//
+//		}
 
 
 		// ★ 勝利した方の出力を行ってください。「○○は■■との戦闘に勝利した」
-		if(hero.damage(i)==true) {
+//		if(super ==true) {
+//
+//		}
 
-		}
-
-		System.out.println();
 	}
 }
