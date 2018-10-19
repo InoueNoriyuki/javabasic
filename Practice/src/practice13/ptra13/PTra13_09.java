@@ -6,7 +6,9 @@
  */
 package practice13.ptra13;
 
-public class PTra13_09 {
+import practice13.common.Employee;
+
+public class PTra13_09 extends Employee {
 
 	/*
 	 * ★ PTra13_08で作成したEmployeeクラスを使用します
@@ -34,7 +36,77 @@ public class PTra13_09 {
 	public static void main(String[] args) {
 
 		// ★ 定数で定義されている各データを使用して、Employeeインスタンスを３つ作成してください
-		Employee employee =new Employee[3];
+		Employee[] employee =new Employee[3];
+
+		Employee employee1 =new Employee();
+		employee[0]=employee1;
+		Employee employee2 =new Employee();
+		employee[1]=employee2;
+
+		Employee employee3 =new Employee();
+		employee[2]=employee3;
+
+		for(int i=0;i<employee.length;i++) {
+
+
+		employee[i].setUserNm(NAMEDATA[i]);
+		employee[i].setMail(MAILDATA[i]);
+		employee[i].setPassword(PASSDATA[i]);
+		employee[i].setDepartmentNm(QUATERDATA[0][i]);
+		employee[i].setDepartmentCnt(Integer.parseInt(QUATERDATA[1][i]));
+
+		System.out.println(employee[i].getUserNm());
+		System.out.println(employee[i].getMail());
+		System.out.println(employee[i].getPassword());
+		System.out.println(employee[i].getDepartmentNm());
+		System.out.println(employee[i].getDepartmentCnt());
+		}
 
 	}
 }
+
+
+
+
+	/*	employee[0] =employee1;
+		employee1.setUserNm(NAMEDATA[0]);
+		employee1.setMail(MAILDATA[0]);
+		employee1.setPassword(PASSDATA[0]);
+		employee1.setDepartmentNm(QUATERDATA[0][0]);
+
+
+		employee[1]=employee2;
+		employee2.setUserNm(NAMEDATA[1]);
+		employee2.setMail(MAILDATA[1]);
+		employee2.setPassword(PASSDATA[1]);
+		employee2.setDepartmentNm(QUATERDATA[1][1]);
+
+
+		employee[2]=employee3;
+		employee3.setUserNm(NAMEDATA[2]);
+		employee3.setMail(MAILDATA[2]);
+		employee3.setPassword(PASSDATA[2]);
+		employee3.setDepartmentNm(QUATERDATA[2][2]);
+
+
+		System.out.println(employee[0].getUserNm(NAMEDATA[0]));
+
+		}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

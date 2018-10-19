@@ -8,6 +8,7 @@ public class Employee extends Person{
 	public String getDepartmentNm() {
 		return this.departmentNm;
 	}
+	
 	public void setDepartmentNm(String departmentNm) {
 		this.departmentNm =departmentNm;
 	}
