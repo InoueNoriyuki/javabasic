@@ -6,5 +6,9 @@ public class User {
 		String mail;
 		String password;
 
+		@Override
+		public String toString() {
+			return userId + "\n" + userNm + "\n" + mail + "\n" + password;
+		}
 
 }
