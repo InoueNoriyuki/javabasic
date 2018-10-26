@@ -13,6 +13,5 @@ public class PTra09_01 {
 		String str = "この文字列をゆっくり表示したい";
 		Util.dispMessageSlowly(str,500);
 
-
 	}
 }

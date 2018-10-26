@@ -21,18 +21,18 @@ public class PTra10_04 {
 
 			User[]users =new User[3];
 
-			User users1 =new User();
-
-			User users2 =new User();
-
-
-			User users3 =new User();
-
-			users[0]=users1;
-
-			users[1]=users2;
-
-			users[2]=users3;
+//			User users1 =new User();
+//
+//			User users2 =new User();
+//
+//
+//			User users3 =new User();
+//
+//			users[0]=users1;
+//
+//			users[1]=users2;
+//
+//			users[2]=users3;
 
 
 
@@ -60,7 +60,7 @@ public class PTra10_04 {
 			String[]list = line.split(",");
 
 
-
+			users[i] = new User();
 			users[i].userId =Integer.parseInt(list[0]);
 			users[i].userNm = list[1];
 			users[i].mail = list[2];
