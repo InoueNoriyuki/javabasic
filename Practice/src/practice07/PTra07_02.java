@@ -12,7 +12,7 @@ public class PTra07_02 {
 		// ★ int型の配列arrayを宣言し、1000個の領域で確保してください
 		int[]array;
 		array = new int[1000];
-		
+
 
 		// ★ 配列arrayに [1,2,3,4,5,6,7,・・・・,998,999,1000] を代入してください
 		for(int i=0; i<array.length; i++) {

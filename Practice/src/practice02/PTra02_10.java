@@ -22,7 +22,12 @@ public class PTra02_10 {
 		 * ※ プログラムは何行書いても良いです
 		 */
 
-		coffee = coffee * 
+		int total = (coffee * 2) + snack;
+		double tax = total * 0.08;
+		int taxTruncation = (int)tax;
+		moneyInHand = moneyInHand - (total + taxTruncation);
+		System.out.println("所持金：" + moneyInHand);
+
 
 	}
 }

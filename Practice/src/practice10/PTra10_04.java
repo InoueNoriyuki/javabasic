@@ -45,9 +45,9 @@ public class PTra10_04 {
 
 
 			for(int i =0;i<users.length;i++) {
-				i +=1;
 
-			System.out.println(i+"人目の情報を入力します");		/* ##には、カウントを入れてください */
+
+			System.out.println((i+1)+"人目の情報を入力します");		/* ##には、カウントを入れてください */
 			System.out.println("ユーザID（数字）、 ユーザ名、メールアドレス、パスワードをカンマ区切りで入力してください");
 
 			// ★ コマンドプロンプトに入力された値を、String型の変数lineに格納してください
@@ -75,10 +75,7 @@ public class PTra10_04 {
 
 		// ★ usersに格納されている全てのインスタンスの、フィールドuserId, userNm, mail, passwordを出力してください
 
-			System.out.println(users[i].userId);
-			System.out.println(users[i].userNm);
-			System.out.println(users[i].mail);
-			System.out.println(users[i].password);
+			System.out.println(users[i].toString());
 		}
 
 	}

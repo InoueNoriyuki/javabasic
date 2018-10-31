@@ -26,7 +26,6 @@ public class PTra18_04 {
 		 * ★ ArrayListを作成して、Playerインスタンスを格納してください
 		 */
 
-
 		ArrayList<Player> array = new ArrayList<>();
 
 		try (Scanner scanner = new Scanner(new File("file/BestElevenCandidate.csv"));) {
@@ -43,22 +42,49 @@ public class PTra18_04 {
 				array.add(player);
 			}
 
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
 
 		// ★ ①のArrayListの中からGK1名、DF4名、MF4名, FW2名をランダムで出力してください
-				Collections.shuffle(array);
+		Collections.shuffle(array);
 
-				for(Player player:array) {
-					if(player.getPosition().equals("GK")) {
-						System.out.println(player);
-						break;
-					}
-				}
+		for (Player player : array) {
+			if (player.getPosition().equals("GK")) {
+				System.out.println(player);
+				break;
+			}
+		}
 
-				} catch (FileNotFoundException e) {
-					e.printStackTrace();
+		int dfCount = 0;
+		for (Player player : array) {
+			if (player.getPosition().equals("DF")) {
+				System.out.println(player);
+				dfCount++;
+				if(dfCount >= 4) {
+					break;
 				}
 			}
-
+		}
+		int mfCount = 0;
+		for (Player player : array) {
+			if (player.getPosition().equals("DF")) {
+				System.out.println(player);
+				mfCount++;
+				if(mfCount >= 4) {
+					break;
+					}
+				}
+		}
+		int fwCount = 0;
+		for (Player player : array) {
+			if (player.getPosition().equals("DF")) {
+				System.out.println(player);
+				fwCount++;
+				if(fwCount >= 4) {
+					break;
+							}
+					}
+			}
+	}
 }
-
-

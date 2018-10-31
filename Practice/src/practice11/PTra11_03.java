@@ -12,7 +12,7 @@ public class PTra11_03 {
 	 * ★ PTra11_03クラスに、クラスフィールドでint型のnumberを定義してください
 	 */
 
-	int number ;
+	static int number ;
 
 
 
@@ -23,8 +23,7 @@ public class PTra11_03 {
 	 * ★ 処理は、クラスフィールドnumberに1を加算してください
 	 */
 		PTra11_03(){
-		this.number =1;
-		System.out.println(this.number);
+		this.number++;
 		}
 
 	public static void main(String[] args) {
